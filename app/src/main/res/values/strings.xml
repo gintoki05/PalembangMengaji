@@ -1,0 +1,25 @@
+<!--
+  ~ Copyright (c) 2017. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  ~ Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
+  ~ Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
+  ~ Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
+  ~ Vestibulum commodo. Ut rhoncus gravida arcu.
+  -->
+
+<resources>
+    <string name="app_name">Palembang Mengaji</string>
+    <string name="jadwal_lengkap">Jadwal Lengkap</string>
+    <string name="qa">Q&amp;A</string>
+    <string name="about">Tentang Kami</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="copyright">&#169; MIT Konsultan Palembang </string>
+    <string name="tentang">Palembang Mengaji v2.1</string>
+    <string name="email">Email : info@mitkonsultan.com</string>
+    <string name="website">Website : www.mitkonsultan.com</string>
+    <string name="support">Didukung Oleh:</string>
+    <string name="develope">Dikembangkan Oleh:</string>
+    <string name="stop_alarm">Stop Alarm</string>
+    <string name="start_alarm">Set Alarm</string>
+    <string name="global">Notifikasi Kajian</string>
+</resources>

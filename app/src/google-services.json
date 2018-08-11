@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "480914051248",
+    "firebase_url": "https://palembang-mengaji.firebaseio.com",
+    "project_id": "palembang-mengaji",
+    "storage_bucket": "palembang-mengaji.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:480914051248:android:58912c0f37803bcd",
+        "android_client_info": {
+          "package_name": "com.mitkonsultan.palembangmengaji"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "480914051248-klh212p0gbpq7117mo7hjaggiv8banhu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mitkonsultan.palembangmengaji",
+            "certificate_hash": "63e1534ddbc070797b6615bba692cf693a5f740b"
+          }
+        },
+        {
+          "client_id": "480914051248-17rq2l8cissa9bj2c0dt11i5g3n3fi0i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeXNLMv6m-0lDKTNAihAmqxjRyywHNcmo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "480914051248-17rq2l8cissa9bj2c0dt11i5g3n3fi0i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

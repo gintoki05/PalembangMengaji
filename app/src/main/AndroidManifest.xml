@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mitkonsultan.palembangmengaji">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name=".info.AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".hari.Senin"
+            android:label="Kajian Senin"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".hari.Selasa"
+            android:label="Kajian Selasa"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".hari.Rabu"
+            android:label="Kajian Rabu"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".hari.Kamis"
+            android:label="Kajian Kamis"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".hari.Jumat"
+            android:label="Kajian Jumat"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".hari.Sabtu"
+            android:label="Kajian Sabtu"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".hari.Ahad"
+            android:label="Kajian Ahad"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAA1sVjuG_P__17srtmXHqZyRkKyIa9q7c" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".map.MasjidBakti" />
+        <activity android:name=".map.MasjidImamSyafii" />
+        <activity android:name=".map.Mazada" />
+        <activity android:name=".map.MasjidFirqotun" />
+        <activity android:name=".map.MusallaDarussalam" />
+        <activity android:name=".map.MasjidAlhidayah" />
+        <activity android:name=".map.MasjidAssudais" />
+        <activity android:name=".map.MasjidSabilulMuhtadin" />
+        <activity android:name=".map.MasjidDarulAsykar" />
+        <activity android:name=".map.KediamanUA" />
+        <activity
+            android:name=".menu.TentangKami"
+            android:label="Tentang Kami"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".menu.JadwalLengkap"
+            android:label="Jadwal Kajian Lengkap"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".menu.FAQ"
+            android:label="Q&amp;A"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DetailActivity"
+            android:label="Palembang Mengaji"
+            android:parentActivityName=".DetailActivity" />
+        <activity
+            android:name=".DetailActivityVideo"
+            android:configChanges="orientation|screenSize"
+            android:parentActivityName=".DetailActivityVideo"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".VideoLokal"
+            android:label="Palembang Mengaji"
+            android:parentActivityName=".VideoLokal" />
+
+        <!-- Declare  Alarm Broadcast receiver here -->
+        <receiver android:name=".alarm.senin.AlarmReceiver" />
+        <receiver android:name=".alarm.selasa.AlarmReceiverSelasa" />
+        <receiver android:name=".alarm.rabu.AlarmReceiverRabu" />
+        <receiver android:name=".alarm.kamis.AlarmReceiverKamis" />
+        <receiver android:name=".alarm.jumat.AlarmReceiverJumat" />
+        <receiver android:name=".alarm.sabtu.AlarmReceiverSabtu" />
+        <receiver android:name=".alarm.ahad.AlarmReceiverAhad" />
+
+        <!-- Declare  Alarm Notification Service here -->
+        <service android:name=".alarm.senin.AlarmNotificationService" />
+        <service android:name=".alarm.selasa.AlarmNotificationServiceSelasa" />
+        <service android:name=".alarm.rabu.AlarmNotificationServiceRabu" />
+        <service android:name=".alarm.kamis.AlarmNotificationServiceKamis" />
+        <service android:name=".alarm.jumat.AlarmNotificationServiceJumat" />
+        <service android:name=".alarm.sabtu.AlarmNotificationServiceSabtu" />
+        <service android:name=".alarm.ahad.AlarmNotificationServiceAhad" />
+
+        <!-- Declare  Alarm Sound Service here -->
+        <service android:name=".alarm.AlarmSoundService" />
+
+        <activity android:name=".menu.Alarm" />
+        <activity android:name=".menu.AlarmSelasa" />
+        <activity android:name=".menu.AlarmRabu" />
+        <activity android:name=".menu.AlarmKamis" />
+        <activity android:name=".menu.AlarmJumat" />
+        <activity android:name=".menu.AlarmSabtu" />
+        <activity android:name=".menu.AlarmAhad" />
+
+        <!-- Firebase Notifications -->
+        <service android:name=".firebase.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".firebase.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <!-- ./Firebase Notifications -->
+        <activity android:name=".menu.Setting"></activity>
+    </application>
+
+</manifest>

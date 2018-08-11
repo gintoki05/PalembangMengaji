@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardview1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="6dp"
+    card_view:cardElevation="6dp"
+    card_view:contentPadding="7dp"
+    android:padding="10dp"
+    android:layout_margin="7dp"
+    card_view:cardBackgroundColor="#f1f5f8"
+    >
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow>
+
+            <ImageView
+                android:id="@+id/kalender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="10dp"
+                card_view:srcCompat="@drawable/kalender" />
+
+
+            <TextView
+                android:id="@+id/senin5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#4c4c4c"
+                android:textSize="12sp" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+
+
+        <TableRow>
+
+            <ImageView
+                android:id="@+id/masjid"
+                android:layout_width="@dimen/thumbnail"
+                android:layout_height="@dimen/thumbnail"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/row_padding"
+                card_view:srcCompat="@drawable/mosque" />
+
+
+            <TextView
+                android:id="@+id/senin1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:layout_toRightOf="@id/thumbnail"
+                android:paddingRight="16dp"
+                android:textColor="@color/contact_name"
+                android:textSize="@dimen/contact_name"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginLeft="45dp"
+            android:background="@android:color/darker_gray" />
+
+        <TableRow>
+
+            <ImageView
+                android:id="@+id/jam"
+                android:layout_width="@dimen/thumbnail"
+                android:layout_height="@dimen/thumbnail"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/row_padding"
+                card_view:srcCompat="@drawable/clock" />
+
+            <TextView
+                android:id="@+id/senin2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textColor="#4c4c4c"
+                android:textSize="14sp" />
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="45dp"
+            android:background="@android:color/darker_gray" />
+
+        <TableRow>
+
+            <ImageView
+                android:id="@+id/user"
+                android:layout_width="@dimen/thumbnail"
+                android:layout_height="@dimen/thumbnail"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/row_padding"
+                card_view:srcCompat="@drawable/user" />
+
+            <TextView
+                android:id="@+id/senin3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textColor="#4c4c4c"
+                android:textSize="14sp" />
+
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="45dp"
+            android:background="@android:color/darker_gray" />
+
+        <TableRow>
+
+            <ImageView
+                android:id="@+id/buku"
+                android:layout_width="@dimen/thumbnail"
+                android:layout_height="@dimen/thumbnail"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/row_padding"
+                card_view:srcCompat="@drawable/books" />
+
+            <TextView
+                android:id="@+id/senin4"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textColor="#4c4c4c"
+                android:textSize="14sp" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <ImageView
+                android:id="@+id/users"
+                android:layout_width="@dimen/thumbnail"
+                android:layout_height="@dimen/thumbnail"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/row_padding"
+                card_view:srcCompat="@drawable/users" />
+
+            <TextView
+                android:id="@+id/senin6"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textColor="#4c4c4c"
+                android:textSize="14sp" />
+
+        </TableRow>
+
+
+    </TableLayout>
+
+
+</android.support.v7.widget.CardView>
+
